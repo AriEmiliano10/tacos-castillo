@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos y Parrilla Castillo - Menú</title>
+    <!-- Iconos de FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Tu hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== ENCABEZADO (HEADER) ==================== -->
+    <header>
+        <div class="header-inner">
+            <div class="header-logo-container">
+                <!-- El logo se cargará desde tu carpeta img/ -->
+                <img src="img/logo.png" 
+                     onerror="this.style.display='none'" 
+                     alt="Tacos y Parrilla Castillo Logo" 
+                     class="header-logo-img">
+            </div>
+            <div class="header-copy">
+                <h1>Tacos y Parrilla Castillo</h1>
+                <p class="header-tagline">Tradición que se prueba, sazón que enamora.</p>
+                <div class="header-meta">
+                    <span><i class="fas fa-clock"></i> Lun a dom · 4:30 p.m. &ndash; 2:00 a.m.</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== BARRA DE PROMOCIÓN ==================== -->
+    <div class="promotion-banner" id="promotionBanner">
+        <i class="fas fa-star"></i>
+        <span id="promotionText"></span>
+    </div>
+
+    <!-- ==================== CARRUSEL DE IMÁGENES ==================== -->
+    <div class="container">
+        <div class="carousel-section">
+            <h2 class="carousel-title">¿Qué se te antoja hoy?</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Las imágenes del carrusel se generan con JavaScript -->
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </div>
+
+    <!-- ==================== MENÚ DE NAVEGACIÓN (Píldoras) ==================== -->
+    <nav>
+        <div class="container" style="padding: 0 1rem;">
+            <div class="nav-container" id="navContainer"></div>
+        </div>
+    </nav>
+
+    <!-- ==================== ÁREA DE PRODUCTOS ==================== -->
+    <div class="container">
+        <div class="content" id="menuContent"></div>
+    </div>
+
+    <!-- ==================== VENTANA MODAL (Detalle del producto) ==================== -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProductName"></h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img id="modalProductImage" class="product-image" src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h4 id="modalProductTitle"></h4>
+                    <div class="product-price">
+                        <span id="modalProductPrice"></span>
+                        <small id="modalProductPriceNote"></small>
+                    </div>
+                    <p id="modalProductDescription"></p>
+                    <ul class="product-highlights" id="modalHighlights"></ul>
+                    <div class="product-options" id="productOptions">
+                        <h5 id="productOptionsTitle">Opciones disponibles</h5>
+                        <div class="option-group" id="complementosContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== PIE DE PÁGINA (FOOTER) ==================== -->
+    <footer>
+        <div class="container" style="max-width: 800px;">
+            <p><strong>Tacos y Parrilla Castillo</strong></p>
+            
+            <!-- Dirección actualizada -->
+            <p style="margin-bottom: 1.5rem;">
+                <i class="fas fa-map-marker-alt"></i> 
+                San Juan Estrella, Iztapalapa, 09868 Ciudad de México, CDMX
+            </p>
+
+            <!-- Mapa de Google Maps (Responsive) -->
+            <div style="width: 100%; height: 300px; margin: 0 auto 1.5rem auto; border-radius: 12px; overflow: hidden; border: 3px solid #FFC700; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.6131511280664!2d-99.07482618389923!3d19.329919153459365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce039f141fde73%3A0x11e866cf12c96c09!2sTaquer%C3%ADa%20Castillo!5e0!3m2!1ses-419!2smx!4v1764989188709!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Iconos de Redes Sociales -->
+            <div class="footer-icons">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">© 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- ==================== LÓGICA DE JAVASCRIPT ==================== -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
