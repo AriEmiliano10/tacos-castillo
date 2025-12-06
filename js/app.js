@@ -14,7 +14,7 @@ const menuData = {
                 name: "Taco Tradicional",
                 price: "$15 c/u",
                 priceNote: "Incluye cualquiera de nuestras proteínas clásicas.",
-                description: "Doble tortilla de maíz nixtamalizado, cebolla blanca, cilantro y limón. El taco que nos dio fama en Veracruz.",
+                description: "Doble tortilla de maíz nixtamalizado, cebolla blanca, cilantro y limón.",
                 image: "img/taco-tradicional.JPG",
                 badges: ["Favorito de la casa"],
                 highlights: ["Tortillas hechas a mano", "Salsas verde, roja y habanero"],
